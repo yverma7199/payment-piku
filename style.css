@@ -1,0 +1,646 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
+.nav-link {
+    font-size: 19px !important;
+    color: black !important;
+    font-weight: 500 !important;
+}
+
+.navi-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-row {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logo-track {
+    display: flex;
+    animation: scroll-left 13s linear infinite;
+}
+
+.logo-item {
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-item img {
+    max-height: 60px;
+    margin-right: 130px;
+    object-fit: contain;
+}
+
+.logo-caption {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.main-button:hover {
+    background-color: #b66cff !important;
+    color: white !important;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.images {
+    position: relative;
+    display: flex;
+    justify-content: center !important;
+}
+
+.img-1 {
+    position: absolute;
+    top: 50px;
+}
+
+.card-text {
+    margin-left: 330px !important;
+}
+
+.images {
+    margin-left: 230px !important;
+}
+
+.img-2 {
+    position: absolute;
+    transform: rotate(-5deg);
+    top: 80px;
+}
+
+.img-3 {
+    position: absolute;
+    transform: rotate(-5deg);
+    top: 120px;
+}
+
+.accordion-button {
+    background-color: #fff176 !important;
+    color: #000;
+    font-weight: 600;
+    border-radius: 12px !important;
+    box-shadow: 0 6px 0 #000;
+    margin-bottom: 15px;
+    transition: all 0.2s ease;
+}
+
+.carding-card {
+    transition: transform 13s ease-in-out !important;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 6px 0 #000;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #fff176 !important;
+    color: #000;
+    box-shadow: 0 6px 0 #000;
+}
+
+.accordion-item {
+    border: none;
+    background-color: transparent;
+}
+
+.accordion-body {
+    border-radius: 12px;
+    font-size: 0.95rem;
+    background-color: #fff176 !important;
+    color: #000;
+    font-weight: 400;
+    box-shadow: 0 6px 0 #000;
+}
+
+.feature-logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    background-color: #E1FF2D !important;
+}
+
+.feature-card:hover .feature-logo {
+    transform: translateY(-10px);
+}
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #E1FF2D;
+    color: black;
+    border: none;
+    padding: 10px 13px;
+    font-size: 18px;
+    border-radius: 30%;
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+    transition:
+        opacity 3s ease,
+        transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.scroll-to-top-btn:hover {
+    transform: scale(1.1);
+}
+
+.quotation {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.links ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.links ul li {
+    gap: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.logos-main:hover,
+.nav-link:hover {
+    color: #b66cff !important;
+    cursor: pointer !important;
+}
+
+.links ul li:hover,
+.number:hover {
+    color: #b66cff !important;
+    cursor: pointer !important;
+}
+
+.features {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.footer-subscribe {
+    padding: 40px 40px !important;
+}
+
+.social-logo {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.social-logo:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        width: 100% !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        margin-top: 0px !important;
+        border-radius: 0px !important;
+    }
+
+    .nav-link {
+        font-size: 16px !important;
+    }
+
+    .navi-btn {
+        font-size: 16px !important;
+    }
+
+    .main,
+    .card,
+    .features,
+    .payment,
+    .carding-main,
+    .accordians,
+    .spending,
+    .footer-main {
+        width: 93% !important;
+    }
+
+    .main-heading {
+        font-size: 72px !important;
+    }
+
+    .main-heading img {
+        height: 65px !important;
+    }
+
+    .payment-heading,
+    .center-heading {
+        font-size: 56px !important;
+    }
+
+    .payment-caption,
+    .center-caption {
+        font-size: 20px !important;
+    }
+
+    .payment-heading img {
+        height: 45px !important;
+    }
+
+    .card-text {
+        margin-left: 230px !important;
+    }
+
+    .images {
+        margin-left: 200px !important;
+    }
+
+    .main-caption {
+        font-size: 22px !important;
+    }
+
+    .main-button {
+        font-size: 20px !important;
+    }
+
+    .img-1,
+    .img-2 {
+        height: 400px !important;
+        top: 0px !important;
+    }
+
+    .img-3 {
+        top: 20px !important;
+        height: 450px !important;
+    }
+
+    .card-heading,
+    .revenue-numbering,
+    .client-number,
+    .heading {
+        font-size: 54px !important;
+    }
+
+    .card-subtitle,
+    .revenue-text,
+    .client-text {
+        font-size: 20px !important;
+    }
+
+    .payment-image img {
+        width: 300px !important;
+    }
+
+    .carding-image {
+        height: 40px !important;
+    }
+
+    .carding-text {
+        font-size: 36px !important;
+    }
+
+    .card-name,
+    .logos-main,
+    .address,
+    .number,
+    .card-stars,
+    .links ul li {
+        font-size: 14px !important;
+    }
+
+    .accordion-button,
+    .social-logo i {
+        font-size: 16px !important;
+    }
+
+    .accordian-main {
+        gap: 20px !important;
+    }
+
+    .footer-subscribe {
+        display: wrap !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 20px !important;
+        padding: 40px 40px !important;
+    }
+
+    .logos img {
+        height: 40px !important;
+    }
+
+    .footer-logo {
+        width: 15% !important;
+    }
+
+    .social-logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navi-top {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+    }
+
+    .upper-main-line {
+        display: wrap !important;
+        flex-wrap: wrap !important;
+        gap: 50px !important;
+    }
+
+    .lower-main {
+        display: wrap !important;
+        flex-wrap: wrap !important;
+        gap: 50px;
+    }
+
+    .card-main {
+        display: wrap !important;
+        flex-wrap: wrap !important;
+    }
+
+    .feature-logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .featured-logo {
+        font-size: 24px !important;
+    }
+
+    .card-text {
+        margin-left: 50px !important;
+    }
+
+    .images {
+        margin-left: 30px !important;
+    }
+
+    .feature-heading {
+        font-size: 20px !important;
+    }
+
+    .feature-caption,
+    .payment-caption,
+    .center-caption {
+        font-size: 16px !important;
+    }
+
+    .payment-heading,
+    .center-heading {
+        font-size: 36px !important;
+    }
+
+    .subscribe-header {
+        font-size: 54px !important;
+    }
+
+    .payment-heading img {
+        height: 30px !important;
+    }
+
+    .carding-text {
+        font-size: 30px !important;
+    }
+
+    .card-star,
+    .card-name,
+    .logos-main,
+    .links ul li,
+    .address,
+    .number {
+        font-size: 12px !important;
+    }
+
+    .image-1,
+    .image-2 {
+        width: 20% !important;
+    }
+
+    .card-text {
+        padding-top: 500px !important;
+    }
+
+    .social-logo {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .navi-top {
+        gap: 20px;
+    }
+
+    nav {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .nav-logo {
+        height: 40px !important;
+    }
+
+    .main-button {
+        font-size: 14px !important;
+    }
+
+    .main-heading,
+    .card-heading {
+        font-size: 42px !important;
+    }
+
+    .main-caption,
+    .main-button,
+    .main-subtitle,
+    .card-subtitle {
+        font-size: 16px !important;
+    }
+
+    .revenue-numbering,
+    .client-number {
+        font-size: 36px !important;
+    }
+
+    .revenue-text,
+    .client-text {
+        font-size: 14px !important;
+    }
+
+    .main-buttons {
+        display: wrap !important;
+        flex-wrap: wrap !important;
+    }
+
+    .card-text {
+        padding: 0px !important;
+        margin: 300px 10px 20px 50px !important;
+    }
+
+    .card-main {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .img-1,
+    .img-2 {
+        height: 250px !important;
+        top: 0px !important;
+    }
+
+    .img-3 {
+        top: 20px !important;
+        height: 300px !important;
+    }
+
+    .card-btn {
+        font-size: 18px !important;
+    }
+
+    .images {
+        margin-left: 200px !important;
+    }
+
+    .features {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .feature-card,
+    .payment-text {
+        width: 100% !important;
+    }
+
+    .payment-upper {
+        display: wrap !important;
+        flex-wrap: wrap !important;
+    }
+
+    .payment-lower {
+        display: wrap !important;
+        flex-wrap: wrap-reverse !important;
+    }
+
+    .payment-text-1 {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+
+    .carding-main {
+        display: wrap !important;
+        flex-wrap: wrap !important;
+    }
+
+    .carding-card {
+        width: 100% !important;
+        padding: 20px 20px !important;
+    }
+
+    .accordian-main {
+        display: wrap !important;
+        flex-wrap: wrap !important;
+    }
+
+    .image-1,
+    .image-2 {
+        display: none !important;
+    }
+
+    .subscribe-header {
+        font-size: 30px !important;
+    }
+
+    .footer-subscribe {
+        padding: 20px 10px !important;
+    }
+
+    .footer-input {
+        display: wrap !important;
+        flex-wrap: wrap !important;
+        gap: 20px !important;
+        justify-content: center !important;
+    }
+
+    .footer-middle {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        gap: 40px;
+    }
+
+    .footer-logo {
+        display: flex !important;
+        width: 100% !important;
+        flex-direction: row !important;
+        gap: 50px !important;
+        justify-content: center !important;
+    }
+
+    .logos-main {
+        width: 40% !important;
+        text-align: center !important;
+    }
+
+    .links {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .links ul li {
+        font-size: 18px !important;
+        text-align: center !important;
+    }
+
+    .footer-info {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    .address,
+    .number,
+    .social-logo {
+        font-size: 18px !important;
+        text-align: center !important;
+    }
+
+    .socials {
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
